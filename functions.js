@@ -1,6 +1,6 @@
 	function DrawBoard()
 	{
-		for(var i=3;i<20;i++)
+		for(var i=2;i<20;i++)
 		{
 			for(var o=0;o<10;o++)
 			{
@@ -11,16 +11,11 @@
 					document.write('<center><h1>Game Over</h1></br><h2>Your score: '+score+'</h2><a href="tetris.html">Refresh</a></center>');
 					return;
 				}
-				if(board[i][o] != 0)
+				if(board[i][o] != 0&&i!=2)
 				{
 					document.getElementById(i+"k"+o).style.backgroundColor = colors[board[i][o]-1];
 				}
-				else
-				{
-					document.getElementById(i+"k"+o).style.backgroundColor = "lightgray";
-				}
-				//Anti gpx glitch
-				if(i==0)
+				else if(i!=2)
 				{
 					document.getElementById(i+"k"+o).style.backgroundColor = "lightgray";
 				}
