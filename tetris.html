@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Tetris</title>
+		<link rel="Stylesheet" href="tetris.css">
+	</head>
+	<body>
+
+		<div class="main">
+			<h1>JavaScript Tetris</h1>
+		
+			<div class="left">
+			
+			<h3>Score:</h3>
+			<div id="score">0</div>
+			
+			<h3>Next Block:</h3>
+				<table>
+					<script>
+						for(var i=0;i<4;i++)
+						{
+							document.write("<tr>")
+							for(var o=0;o<4;o++)
+							{
+								document.write("<td id='"+i+"p"+o+"'></td>")
+							}
+							document.write("</tr>")
+						}
+					</script>
+				</table>
+			</div>
+		
+			<div class="right">
+				<table>
+					<script>
+						//Build board gpx
+						for(var i=0;i<20;i++)
+						{
+							document.write("<tr>")
+							for(var o=0;o<10;o++)
+							{
+								document.write("<td id='"+i+"k"+o+"'></td>")
+							}
+							document.write("</tr>")
+						}
+					</script>
+					<script src="blocks.js"></script>
+					<script src="functions.js"></script>
+					<script src="tetris.js"></script>
+				</table>
+			</div>
+		
+			<div class="bottom">by exewin 2018</div>
+		
+		</div>
+
+	</body>
+</html>
+
+
+

@@ -1,0 +1,56 @@
+body
+{
+	background-color:#99c;
+	text-align:center;
+	
+}
+
+.main
+{
+	background-color:#ccf;
+	text-align:center;
+	width:600px;
+	margin:auto;
+	border:1px solid #111;
+}
+
+table
+{
+	padding:5px;
+	margin:auto;
+	border:2px solid #111;
+	padding:0px;
+	background-color:#010;
+}
+
+td
+{
+	width:30px;
+	height:30px;
+	background-color:lightgray;
+	-moz-box-shadow:    inset 0 0 15px #D2D2D2;
+	-webkit-box-shadow: inset 0 0 15px #D2D2D2;
+	box-shadow:         inset 0 0 15px #D2D2D2;
+}
+
+.left
+{
+	float:left;
+	padding:10px;
+	display:inline-block;
+	border:2px solid #111;
+	margin-left:20px;
+}
+
+.right
+{
+	display:inline-block;
+	border:2px solid #111;
+}
+
+.bottom
+{
+	padding:5px;
+	background-color:#aad;
+	clear:both;
+}
