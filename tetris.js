@@ -12,6 +12,8 @@
 		for(var o=0;o<10;o++)
 		{
 			board[i][o] = 0;
+			if(i<3)
+				document.getElementById(i+"k"+o).style.backgroundColor = "gray";
 			if(i==2)
 				document.getElementById(i+"k"+o).style.borderBottom = "1px solid #f00";
 			if(i==3)

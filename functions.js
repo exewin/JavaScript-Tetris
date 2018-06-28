@@ -1,6 +1,6 @@
 	function DrawBoard()
 	{
-		for(var i=0;i<20;i++)
+		for(var i=3;i<20;i++)
 		{
 			for(var o=0;o<10;o++)
 			{
