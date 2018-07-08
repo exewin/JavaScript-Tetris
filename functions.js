@@ -81,7 +81,7 @@
 				{
 					for (var x = 0; x < 10; x++)
 					{
-						if(board[yc][x]==8)
+						//if(board[yc][x]==8)
 							board[yc][x] = board[yc - 1][x];
 					}
 				}
@@ -140,6 +140,7 @@
 	
 	function RandomBlock()
 	{
+		clearBoard();
 		piece = new Array(4);
 		for (var i = 0; i < 4; i++) 
 		{
