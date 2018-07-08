@@ -21,7 +21,20 @@
 				}
 			}
 		}
-		
+	}
+	
+	function clearBoard()
+	{
+		for(var i=3;i<20;i++)
+		{
+			for(var o=0;o<10;o++)
+			{
+				if(board[i][o] != 0 && board[i][o] != 8 )
+				{
+					board[i][o]=0;
+				}
+			}
+		}
 	}
 	
 	function CanPlace(myBoard, myPiece, x, y)
@@ -68,7 +81,8 @@
 				{
 					for (var x = 0; x < 10; x++)
 					{
-						board[yc][x] = board[yc - 1][x];
+						if(board[yc][x]==8)
+							board[yc][x] = board[yc - 1][x];
 					}
 				}
 				y++;
@@ -236,6 +250,22 @@
 					Move(1);
 				}
 				break; //Right key
+				
+			case 40: 
+				for (var i = 0; i < 20; i++)
+				{
+					if(CanPlace(board, piece, XPos, YPos+i)==0)
+					{
+						//nothing
+					}
+					else
+					{
+						clearBoard();
+						YPos+=i-1;
+						break;
+					}
+				}
+				break; //Down key
 			
 		}
 	}
