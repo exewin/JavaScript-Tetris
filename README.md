@@ -1,7 +1,7 @@
 # JavaScript Tetris
 
 Play here:
-https://exewin.github.io/tetris/tetris.html
+https://exewin.github.io/breakout/breakout.html
 
 
-![alt text](https://github.com/exewin/JavaScript-Tetris/blob/master/tetris.png)
+![alt text](https://github.com/exewin/JavaScript-Breakout/blob/master/breakout.png)
